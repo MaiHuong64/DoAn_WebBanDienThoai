@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+.header{
+    background-color: #f8f9fa;
+    padding: 10px;
+    padding-left: 100px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+.logo{
+    background-image: url('../images/logo.jpg');
+    width: 300px;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+.search-bar{
+   margin: -10px 6px 14px 200px;
+   padding: 20px;
+   display: flex;
+   border: none;
+   border-radius: 10px;
+}
+input[type="text"]{
+    width: 280px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px 0px 0px 10px;   
+}
+button[type="submit"]{
+    width: 145px;
+    font-size: 20px;
+    border-radius: 0px 10px 10px 0px;   
+}
+.user, .cart {
+    margin-left: 190px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.user img, .cart img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.menu-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: aqua;
+    width: 100%;
+}
+.menu-list ul{
+    display: flex;
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+}
+.menu-list ul li{
+    margin: 0 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.menu-list ul li:hover{
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+.menu-list ul li a{
+    text-decoration: none;
+    color: black;
+}
