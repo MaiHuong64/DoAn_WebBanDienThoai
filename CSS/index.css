@@ -20,7 +20,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20;
+    gap: 20px;
 }
 .logo{
     background-image: url('../images/logo.jpg');
@@ -120,4 +120,8 @@ button[type="submit"]:hover {
     background-color: #111;
     color: white;
 }
-
+.owl-carousel .item img {
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng phần tử */
+    height: auto;    /* Giữ tỉ lệ ảnh */
+    object-fit: contain; /* Căn chỉnh ảnh sao cho không bị kéo dãn */
+}
