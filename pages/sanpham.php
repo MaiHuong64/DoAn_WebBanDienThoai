@@ -25,7 +25,7 @@
 	// if ($connect->connect_error) {
 	//     die("Không kết nối: " . $connect->connect_error);
 	// }
-	include("");
+	
 	
 	// Xử lý limit
 	if(isset($_GET["limit_home"]) == true)
