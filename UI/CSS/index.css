@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header{
+    background-color: #f8f9fa;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+}
+.logo{
+    background-image: url('../Images/logo.jpg');
+    width: 300px;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+.search-bar{
+   margin: -10px 6px 14px 200px;
+   padding: 20px;
+   display: flex;
+   border: 1px solid #ccc;
+   border: none;
+   border-radius: 10px;
+}
+input[type="text"]{
+    width: 280px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px 0px 0px 10px;   
+}
+button[type="submit"]{
+    width: 145px;
+    font-size: 20px;
+    border-radius: 0px 10px 10px 0px;   
+}

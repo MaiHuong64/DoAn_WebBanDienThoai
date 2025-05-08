@@ -1,0 +1,473 @@
+body {
+	margin: 0;
+}
+
+#TrangWeb {
+	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid #228B22;
+}
+
+#PhanDau {
+	width: 1000px;
+	height: 220px;
+	background: url(../images/banner_laptop.jpg);
+	text-align:right;
+	vertical-align: middle;
+	color:red;
+	font-size: 16px;
+	font-weight:bold;
+}
+#PhanMenu1{
+	width: 305px;
+	height: 30px;
+	color: white;
+	float:left;
+	background: #1e90ff;
+	
+	
+	
+}
+
+#PhanMenu2{
+	width: 355px;
+	height: 30px;
+	color: white;
+	float:left;
+	text-align:left;
+	vertical-align: middle;
+	background: #1e90ff;
+	font-size: 16px;
+	
+}
+
+#PhanMenu3{
+	width: 340px;
+	height: 30px;
+	color: white;
+	float:right;
+	background: #1e90ff;
+	
+}
+a.menu{
+	text-decoration:none;
+	text-align: center;
+	color:white;
+	font-size: 16px;
+	
+}
+
+a.menu:hover {	
+	
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+#PhanGiua {
+	width: 1000px;
+}
+
+#BenTrai {
+	width: 180px;
+	float: left;
+}
+
+#BenTrai h3 {
+	font-size: 16px;
+	padding: 2px 0 0 5px;
+	margin-bottom: 0;
+	margin-top: 1px;
+	background-color: #228B22;
+	color: #ffffff;
+}
+
+h3.xemthem{
+	font-size: 16px;
+	padding: 2px 0 0 5px;
+	margin-bottom: 0;
+	margin-top: 1px;	
+	color: #ffffff;
+	clear: both;
+}
+#BenTrai ul {	
+	list-style-image: url(../images/li.gif);
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 5px;
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 8px;
+	border: 1px solid #228B22;
+}
+
+#BenTrai ul li a {
+	text-decoration: none;
+	color: #0000ff;
+}
+
+#BenTrai ul li a:hover {	
+	color: #ff0000;
+	font-weight: bold;
+}
+
+#BenTrai ul li a:visited {
+	text-decoration: none;
+	color: #0000ff;
+}
+
+#Giua {
+	width: 800px;
+	float: left;
+	margin-left: 5px;
+	
+}
+
+
+
+#BenPhai h3 {
+	font-size: 16px;
+	padding: 2px 0 0 5px;
+	margin-bottom: 0;
+	margin-top: 1px;
+	background-color: #99FFFF;
+	color: #FF3333;
+}
+
+
+
+
+#Giua h3 {
+	font-size: 16px;
+	padding: 2px 0 10px 0;
+	color: #4169E1;
+	font-family: Tahoma;
+	margin-top: 8px;
+	margin-bottom: 0;
+	text-shadow: 2px 2px 3px #00FF00;
+}
+
+#Giua h4 {
+	font-size: 15px;
+	padding: 2px 0 10px 0;
+	color: #008000;
+	font-family: Tahoma;
+	margin-top: 8px;
+	margin-bottom: 0;
+	text-shadow: 2px 2px 3px #FFD700;
+}
+
+#PhanCuoi {
+	width: 970px;
+	clear: both;
+	height: 100px;
+	background: #1e90ff;	
+	padding: 15px;
+	height: 120px;
+	font-size: 15px;
+	border: 1px solid blue;
+	color: white;
+}
+
+#PhanCuoi table{
+	margin-left: 10px;
+}
+.ThongBaoLoi {
+	padding: 0;
+	margin: 0;
+	color: #ff0000;
+}
+
+.ThongBao {
+	padding: 0;
+	margin: 0;
+	color: #0000ff;
+}
+
+.ThongTin {	
+	color: red;
+	font-weight: bold;
+}
+
+table.Form {
+	border-collapse: collapse;
+}
+
+table.Form th {
+	border: 0px solid #778899;
+	padding: 3px 2px 3px 2px;
+}
+
+table.Form td {
+	border: 0px solid #778899;
+	padding: 3px 2px 3px 2px;
+}
+
+table.DanhSach {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table.DanhSach th {
+	border: 1px solid #778899;
+	padding: 3px 2px 3px 2px;
+	background: #b0c4de;
+}
+
+table.DanhSach td {
+	border: 1px solid #778899;
+	padding: 3px 2px 3px 2px;
+}
+
+i
+textarea {
+	border-top: 1px dotted #808000;
+	border-left: 1px dotted #808000;
+	border-right: 1px dotted #808000;
+	border-bottom: 1px dotted #808000;
+}
+
+input[type=submit] {
+	margin-top: 1px;
+	border: 1px solid #808000;
+	padding: 3px 5px 3px 5px;
+	background-color: #FF33CC;
+	color:white;
+	font-weight:bold;
+}
+
+input.error {
+	border-bottom: 1px solid #ff0000;
+}
+
+select.error {
+	border-bottom: 1px solid #ff0000;
+}
+
+textarea.error {
+	border-top: 1px solid #ff0000;
+	border-left: 1px solid #ff0000;
+	border-right: 1px solid #ff0000;
+	border-bottom: 1px solid #ff0000;
+}
+
+label.error {
+	color: #ff0000;
+}
+
+
+span.requirefield {
+	color: #FF0000;
+	font-size: 12px;
+}
+
+span.luotxem{
+	color: blue;
+	font-size: 16px;
+	
+}
+span.dongia{
+	color: #FF0000;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 5px;
+	background: yellow;
+	text-decoration: line-through;
+	
+}
+span.giaban{
+	color: #FF0000;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 5px;
+	background: yellow;	
+	
+}
+#binhchon {
+	color: #ff0000;
+	font-size:16pt;
+}
+
+p.requirefields {
+	color: #FF0000;
+	font-style: italic;
+	font-size: 12px;
+	padding: 0;
+	margin: 3px 0px 3px 0px;
+}
+#result{
+	margin:20px 0px;
+}
+.rate{
+	width:200px;
+	border:1px solid #ccc;
+	
+}
+.like{
+	float:left;
+	background-color:#006400;
+	width:0px;
+	height:12px;
+}
+.dislike
+{
+	float:right;
+	background-color:red;
+	width:0px;
+	height:12px;
+}
+
+
+
+#menudung ul {
+  background: white;
+  width: 178px;
+  padding: 0;
+  list-style: none;
+  text-align: left;			  
+  
+
+
+}
+
+#menudung li {
+  width: auto;
+  height: 30px;
+  line-height: 40px;
+  border-bottom: 1px solid #e8e8e8;
+  
+  padding: 0 1em;
+}
+
+#menudung li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+#menudung li:hover {  
+  font-size:13pt;
+  color: #ff0000;
+}
+#menudung ul li {
+ position: relative;
+ font-size:12pt;
+}
+
+#menudung .sub-menu {
+ position: absolute;
+ left: 178px;
+ top: 0;
+ display: none;
+}
+#menudung li:hover .sub-menu {
+	display: block;
+	font-size:13pt;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+
+#wrapper{
+    width:750px;
+    min-height: 96%;
+	
+	height: 96%;
+	text-align:left;
+    margin: 0 auto -30px;
+    padding:0 0px 0px 0px;
+}
+
+
+#bigPic{
+	width:750px;
+	height:238px;
+	padding:1px;
+	
+	background-color:#FFF;
+	margin-bottom:10px;
+}
+#bigPic img{
+	position:absolute;
+	display:none;
+}
+ul#thumbs li.active{
+	border:2px solid #000;	
+	background:#fff;
+	padding:2px;
+}
+ul#thumbs, ul#thumbs li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+	
+ul#thumbs li{
+	float:left;
+	margin-right:2px;
+	margin-bottom:5px;
+	border:1px solid #CCC;	
+	padding:3px;
+	cursor:pointer;
+}
+ul#thumbs img{
+	float:left;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	overflow:hidden;
+	
+	z-index:1;		
+}
+
+.khungsanpham
+{
+	width: 250px;
+    height: 260px;	
+	float: left;
+}
+
+
+.card {
+    width: 234px;
+    height: 200px;
+   
+    margin: 8px;
+    padding: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center;
+	border: 1px solid red;
+	float: left;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card-link {
+    text-decoration: none;
+  }
+  .card_moivenew {
+    width: 140px;
+    height: 205px;
+    background-color:#333;
+    margin: 0.9px;
+    padding: 0px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center;
+  }
+
+  .card_moivenew:hover {
+    transform: scale(0.9);
+  }
+  .card-link {
+    text-decoration: none;
+  }
