@@ -1,17 +1,17 @@
 <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "vertrigo";
-    $dbname = "mydb";
-?>
-
-// Tạo kết nối
-<?php
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    // Kiểm tra kết nối
-    if($conn -> connect_error) 
-        die("Kết nối thất bại: " . $conn -> connect_error);
-    else 
-        echo "Kết nối thành công";
+	header("Content-type: text/html; charset=utf-8");
+	$servername = "localhost";
+	$username = "root";
+	$password = "vertrigo";
+	$dbname = "shopdt";	
+	
+	$connect = new mysqli($servername, $username, $password, $dbname);	
+	mysqli_set_charset($connect, 'UTF8');
+	//Nếu kết nối bị lỗi thì xuất báo lỗi và thoát.
+	if ($connect->connect_error) {
+	    die("Không kết nối :" . $conn->connect_error);
+	    exit();
+	}	
+	
+	
 ?>
