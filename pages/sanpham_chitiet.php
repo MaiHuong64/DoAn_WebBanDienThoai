@@ -1,5 +1,5 @@
 <?php
-    include("sanpham_cauhinh.php"); // Kết nối CSDL
+       include("../includes/connect.php"); // Kết nối CSDL
 
     if (!isset($_GET['id_sp'])) {
         echo "Không có sản phẩm để hiển thị.";
@@ -63,11 +63,11 @@
         }
     </style>
 </head>
-<body>
+<body> 
 
 <div class="product-container">
     <div class="product-image">
-        <img src="<?php echo $dong['HinhAnh']; ?>" width="400" alt="Ảnh sản phẩm">
+    <img src="../images/<?php echo $dong['HinhAnh']; ?>" width="400" alt="Ảnh sản phẩm"
     </div>
     <div class="product-details">
         <h3><?php echo $dong['TenSanPham']; ?></h3>

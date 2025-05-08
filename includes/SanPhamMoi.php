@@ -11,17 +11,17 @@
         exit();
     }
     echo "<h2>Sản phẩm mới</h2>";
-    echo "<div class=danhsachsanpham'>";
+    echo "<div class='danhsachsanpham'>";
     while($row = $result->fetch_array(MYSQLI_ASSOC)){
         echo "<div class='khungsanpham'>";
         echo "<div class='card'>";
             echo "<a href='sanpham_chitiet.php?do=sanpham_chitiet&id_sp=" . $row['IdSanPham'] . "&id_nsx=" . $row['IdNhaSanXuat'] . "'>";
-                echo "<img class='HinhAnh' src=../images/" . $row["HinhAnh"] . " style='width: 190px; height: 140px;' alt='" . $row['TenSanPham'] . "'>";
+                echo "<img class='HinhAnh' src=../images/" . $row["HinhAnh"] . " alt='" . $row['TenSanPham'] . "'>";
                 echo "<span class='TenSanPham'>" . $row['TenSanPham'] . "</span><br />";
                 echo "<span class='dongia'>" . number_format($row['DonGia']) . " đ</span>";
             echo "</a>";
             
-            echo "<p><a href='sanpham_chitiet.php?do=sanpham_chitiet&id_sp=" . $row['IdSanPham'] . "&id_nsx=" . $row['IdNhaSanXuat'] . "'>" . $row['TenSanPham'] . "</a></p>";
+            // echo "<p><a href='sanpham_chitiet.php?do=sanpham_chitiet&id_sp=" . $row['IdSanPham'] . "&id_nsx=" . $row['IdNhaSanXuat'] . "'>" . $row['TenSanPham'] . "</a></p>";
             echo "</div>";
         echo "</div>";
     }
