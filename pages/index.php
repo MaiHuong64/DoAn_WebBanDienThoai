@@ -38,21 +38,32 @@
             </ul>
         </div>  
 
-        <div class="owl-carousel owl-theme"> 
-            <div class="item"><img src="../images/banner/banner3.png" alt=""></div>
-            <div class="item"><img src="../images/banner/banner1.png" alt=""></div>
-            <div class="item"><img src="../images/banner/banner2.png" alt=""></div>
-            <div class="item"><img src="../images/banner/banner3.png" alt=""></div>
-            <div class="item"><img src="../images/banner/banner4.png" alt=""></div>
-            <div class="item"><img src="../images/banner/banner5.png" alt=""></div>
-            <div class="item"><img src="../images/banner/banner6.png" alt=""></div>
-            <div class="item"><img src="../images/banner/banner7.png" alt=""></div>
-            <div class="item"><img src="../images/banner/banner8.png" alt=""></div>
-            <div class="item"><img src="../images/banner/banner9.png" alt=""></div>
-        </div>
-
+        
+        <!-- main content -->
         <div id="content">
-            
+            <!-- banner -->
+            <div class="owl-carousel owl-theme"> 
+                <div class="item"><img src="../images/banner/banner3.png" alt=""></div>
+                <div class="item"><img src="../images/banner/banner1.png" alt=""></div>
+                <div class="item"><img src="../images/banner/banner2.png" alt=""></div>
+                <div class="item"><img src="../images/banner/banner3.png" alt=""></div>
+                <div class="item"><img src="../images/banner/banner4.png" alt=""></div>
+                <div class="item"><img src="../images/banner/banner5.png" alt=""></div>
+                <div class="item"><img src="../images/banner/banner6.png" alt=""></div>
+                <div class="item"><img src="../images/banner/banner7.png" alt=""></div>
+                <div class="item"><img src="../images/banner/banner8.png" alt=""></div>
+                <div class="item"><img src="../images/banner/banner9.png" alt=""></div>
+            </div>
+
+            <div class="new_product">
+                <h2>Sản phẩm mới</h2>
+                <div class="row">
+                    <?php
+                        include "includes/SanPhamMoi.php";
+                        include "includes/KetNoiDB.php";
+                    ?>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

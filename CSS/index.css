@@ -72,7 +72,14 @@ button[type="submit"]:hover {
     width: 60px;
     height: 60px;
 }
-
+.user p{
+    font-size: 24px;
+    color: #333;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .user i , .cart i{
     font-size: 48px;
     color: #333;
@@ -121,7 +128,7 @@ button[type="submit"]:hover {
     color: white;
 }
 .owl-carousel .item img {
-    max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng phần tử */
-    height: auto;    /* Giữ tỉ lệ ảnh */
-    object-fit: contain; /* Căn chỉnh ảnh sao cho không bị kéo dãn */
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; 
 }
