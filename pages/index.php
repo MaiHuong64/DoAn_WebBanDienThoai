@@ -32,7 +32,7 @@
         <div class="menu">
             <ul class="menu-list">
                 <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Danh mục</a></li>
                 <li><a href="#">Liên hệ</a></li>
                 <li><a href="#">Giới thiệu</a></li>
             </ul>
@@ -57,12 +57,11 @@
 
             <div class="new_product">
                 <h2>Sản phẩm mới</h2>
-                <div class="row">
                     <?php
-                        include "includes/SanPhamMoi.php";
-                        include "includes/KetNoiDB.php";
+                        include("../includes/connect.php");
+                        include("../includes/SanPhamMoi.php");
+                       
                     ?>
-                </div>
             </div>
         </div>
     </div>
