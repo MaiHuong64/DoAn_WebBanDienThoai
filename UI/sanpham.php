@@ -4,12 +4,13 @@
 	<head>
 		<title>Phone Store</title>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" href="CSS\sanpham.css" >
 	</head>
 	<body>
 		
 		
 		<?php
-			session_start();
+			
 			include_once("sanpham_cauhinh.php"); 
 
 			if(isset($_GET["limit_home"]) == true)
@@ -18,7 +19,7 @@
 				}
 				else
 				{
-					$_SESSION['limit_home'] = 12;
+					$_SESSION['limit_home'] = 43;
 				}
 				$limit_home_ok =  $_SESSION['limit_home'];
 				
@@ -45,14 +46,14 @@
 					$giaban = $row['DonGia'] - (($row['TiLeGiamGia'] /100) * $row['DonGia']);
 					echo "<div class='khungsanpham'>";
 						echo "<div class='card'>";					
-							echo "<a href='sanpham_index.php?do=sanpham_chitiet&id_sp=" . $row['IdSanPham'] . "&id_nsx=" . $row['IdNhaSanXuat'] . "'>";
+							echo "<a href='sanpham_chitiet.php?id_sp=" . $row['IdSanPham'] . "&id_nsx=" . $row['IdNhaSanXuat'] . "'>";
 								echo "<img class='hinhanhphim' src=" . $row["HinhAnh"] . "  style='width: 190px; height: 140px;'>";
 								echo "<span class='tenphim' ></span> <br />";
 							echo "</a>";
 							echo "<span class=\"luotxem\">". $row['LuotXem'] ." lượt xem </span><span class=\"giaban\">". number_format($giaban)." đ</span>";
 							echo "<br /><span class=\"luotxem\"></span><span class=\"dongia\">". number_format($row['DonGia'])." đ</span>";
 						echo "</div>";
-						echo "<p><a  href='sanpham_index.php?do=sanpham_chitiet&id_sp=" . $row['IdSanPham'] . "&id_nsx=" . $row['IdNhaSanXuat'] . "'>" . $row['TenSanPham'] . "</a></p>";
+						echo "<p><a  href='sanpham_chitiet.php?id_sp=" . $row['IdSanPham'] . "&id_nsx=" . $row['IdNhaSanXuat'] . "'>" . $row['TenSanPham'] . "</a></p>";
 						
 					echo "</div>";
 					

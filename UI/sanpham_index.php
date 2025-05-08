@@ -13,7 +13,7 @@
 	<head>
 		<title>Trang Tin Điện Tử</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="CSS\sanpham.css" />
 	
 		<script type="text/javascript" src="scripts/jquery-1.4.1.js"></script>
 		<script type="text/javascript">
@@ -69,7 +69,7 @@
 				
 			</div>
 			<div id="PhanMenu1">
-				<a class = "menu" href="index.php?do=home">Trang chủ</a>  
+				<a class = "menu" href="sanpham_index.php?do=home">Trang chủ</a>  
 				
 		
 			</div>
@@ -79,7 +79,7 @@
 			</div>
 			
 			<div id="PhanMenu3">
-				<form action="index.php?do=search_xuly" method="post">
+				<form action="sanpham_index.php?do=sanpham_search_xuly" method="post">
 					Tìm kiếm: <input type="text" name="search" />
 					<input type="submit" name="ok" value="search" />
 				</form>
@@ -106,7 +106,7 @@
 							
 								while ($row = $danhsach->fetch_array(MYSQLI_ASSOC)) 
 								{
-    								echo "<li><a href='index.php?do=sanpham_nhasanxuat&id_nsx=" . $row['IdNhaSanXuat'] . "'>" . $row['TenNhaSanXuat'] . "</a></li>";   
+    								echo "<li><a href='sanpham_index.php?do=sanpham_nhasanxuat&id_nsx=" . $row['IdNhaSanXuat'] . "'>" . $row['TenNhaSanXuat'] . "</a></li>";   
   								}
 							?>  
 						  
@@ -133,7 +133,7 @@
 					<table border="0" cellspacing="0" width="750" align="center" valign="top">
 						<tr>
 							<td>
-								<?php include 'jquery.php'; ?>
+								<?php include 'sanpham.php'; ?>
 							</td>
 						</tr>
 					</table>
@@ -143,7 +143,7 @@
 						
 						$do = isset($_GET['do']) ? $_GET['do'] : "home";
 						
-						include $do . ".php";
+						// include $do . ".php";
 					?>
 					
 					

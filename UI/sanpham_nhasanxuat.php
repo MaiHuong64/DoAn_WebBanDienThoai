@@ -6,11 +6,11 @@
 		
 		if(isset($_GET["limit"]) == true)
 		{
-			$_SESSION['limit'] += 3;
+			$_SESSION['limit'] += 3; // nhấn xem thêm tăng lên 3
 		}
 		else
 		{
-			$_SESSION['limit'] = 6;
+			$_SESSION['limit'] = 6; //mặc định là 6 sp
 		}
 		$limit_ok =  $_SESSION['limit'];
 		//echo $limit_ok;
@@ -36,30 +36,30 @@
 		$danhsach2 = $connect->query($sql3);
 		$count_sp_nsx = mysqli_num_rows($danhsach2);		
 		
-		
+		//lap qua từng san pham để hiển thị
 		while ($row = $danhsach->fetch_array(MYSQLI_ASSOC)) 		
 		{				
 			$giaban = $row['DonGia'] - (($row['TiLeGiamGia'] /100) * $row['DonGia']);
 			echo "<div class='khungsanpham'>";
 				echo "<div class='card'>";					
-					echo "<a href='sanpham_index.php?do=sanpham_chitiet&id_sp=" . $row['IdSanPham'] . "&id_nsx=" . $row['IdNhaSanXuat'] . "'>";
+					echo "<a href='sanpham_chitiet.php?id_sp=" . $row['IdSanPham'] . "&id_nsx=" . $row['IdNhaSanXuat'] . "'>";
 						echo "<img class='hinhanhphim' src=" . $row["HinhAnh"] . "  style='width: 190px; height: 140px;'>";
 						echo "<span class='tenphim' ></span> <br />";
 					echo "</a>";
 					echo "<span class=\"luotxem\">". $row['LuotXem'] ." lượt xem </span><span class=\"giaban\">". number_format($giaban)." đ</span>";
 					echo "<br /><span class=\"luotxem\"></span><span class=\"dongia\">". number_format($row['DonGia'])." đ</span>";
 				echo "</div>";
-				echo "<p><a  href='sanpham_index.php?do=sanpham_chitiet&id_sp=" . $row['IdSanPham'] . "&id_nsx=" . $row['IdNhaSanXuat'] . "'>" . $row['TenSanPham'] . "</a></p>";
-				
-			echo "</div>";
-			
+				echo "<p><a  href='sanpham_chitiet.php?id_sp=" . $row['IdSanPham'] . "&id_nsx=" . $row['IdNhaSanXuat'] . "'>" . $row['TenSanPham'] . "</a></p>";
+						
+				echo "</div>";
+					
 		}
 		
 
 
 		if($count_sp_nsx > $_SESSION['limit'])
 		{
-			echo "<h3 class=\"xemthem\"><a href='index.php?do=sanpham_nhasanxuat&id_nsx=" . $row1['IdNhaSanXuat'] . "&limit=ok'>Xem thêm các sản phẩm của <b>". $row1['TenNhaSanXuat']."</b></a></h3></td>";
+			echo "<h3 class=\"xemthem\"><a href='sanpham_index.php?do=sanpham_nhasanxuat&id_nsx=" . $row1['IdNhaSanXuat'] . "&limit=ok'>Xem thêm các sản phẩm của <b>". $row1['TenNhaSanXuat']."</b></a></h3></td>";
 		
 		}
 
@@ -67,4 +67,5 @@
 	
 ?>
 
-</table>
+
+
