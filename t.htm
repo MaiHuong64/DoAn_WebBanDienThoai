@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./CSS/index.css">
+
+    <style>
+        /* Basic styling for demo purposes */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .logo {
+            width: 120px;
+            height: 50px;
+            background-color: #f0f0f0;
+        }
+        .search-bar {
+            display: flex;
+            flex: 1;
+            margin: 0 20px;
+        }
+        .search-bar input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+        }
+        .search-bar button {
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        .user, .cart {
+            font-size: 24px;
+            margin-left: 15px;
+            color: #555;
+            cursor: pointer;
+        }
+        .menu {
+            background-color: #333;
+        }
+        .menu-list {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-list li {
+            padding: 0;
+        }
+        .menu-list a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+        .menu-list a:hover {
+            background-color: #555;
+        }
+        .owl-carousel .item img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .new_product {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .new_product h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"></div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+
+            <div class="user">
+                <i class="fa-solid fa-circle-user"></i>
+            </div>
+
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        
+        <div class="menu">
+            <ul class="menu-list">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Danh mục</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+            </ul>
+        </div>  
+
+        <!-- main content -->
+        <div id="content">
+            <!-- banner -->
+            <div class="owl-carousel owl-theme"> 
+                <div class="item"><img src="/api/placeholder/800/400" alt="Banner 1"></div>
+                <div class="item"><img src="/api/placeholder/800/400" alt="Banner 2"></div>
+                <div class="item"><img src="/api/placeholder/800/400" alt="Banner 3"></div>
+                <div class="item"><img src="/api/placeholder/800/400" alt="Banner 4"></div>
+            </div>
+
+            <div class="new_product">
+                <h2>Sản phẩm mới</h2>
+                <div id="product-container">
+                    <!-- This is where PHP would load products -->
+                    <!-- Placeholder for demo purposes -->
+                    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                        <div style="width: 220px; border: 1px solid #ddd; padding: 10px; text-align: center;">
+                            <img src="/api/placeholder/200/200" alt="Product 1">
+                            <h3>Product Name 1</h3>
+                            <p>$19.99</p>
+                            <button style="background: #4CAF50; color: white; border: none; padding: 8px 15px; cursor: pointer;">Add to Cart</button>
+                        </div>
+                        <div style="width: 220px; border: 1px solid #ddd; padding: 10px; text-align: center;">
+                            <img src="/api/placeholder/200/200" alt="Product 2">
+                            <h3>Product Name 2</h3>
+                            <p>$24.99</p>
+                            <button style="background: #4CAF50; color: white; border: none; padding: 8px 15px; cursor: pointer;">Add to Cart</button>
+                        </div>
+                        <div style="width: 220px; border: 1px solid #ddd; padding: 10px; text-align: center;">
+                            <img src="/api/placeholder/200/200" alt="Product 3">
+                            <h3>Product Name 3</h3>
+                            <p>$29.99</p>
+                            <button style="background: #4CAF50; color: white; border: none; padding: 8px 15px; cursor: pointer;">Add to Cart</button>
+                        </div>
+                        <div style="width: 220px; border: 1px solid #ddd; padding: 10px; text-align: center;">
+                            <img src="/api/placeholder/200/200" alt="Product 4">
+                            <h3>Product Name 4</h3>
+                            <p>$34.99</p>
+                            <button style="background: #4CAF50; color: white; border: none; padding: 8px 15px; cursor: pointer;">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                nav: true,
+                dots: true
+            });
+        });
+    </script>
+</body>
+</html>

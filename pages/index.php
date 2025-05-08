@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   
+   
     <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/sanphammoi.css">
+    
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     
@@ -43,30 +48,29 @@
         <div id="content">
             <!-- banner -->
             <div class="owl-carousel owl-theme"> 
-                <div class="item"><img src="../images/banner/banner3.png" alt=""></div>
-                <div class="item"><img src="../images/banner/banner1.png" alt=""></div>
-                <div class="item"><img src="../images/banner/banner2.png" alt=""></div>
-                <div class="item"><img src="../images/banner/banner3.png" alt=""></div>
-                <div class="item"><img src="../images/banner/banner4.png" alt=""></div>
-                <div class="item"><img src="../images/banner/banner5.png" alt=""></div>
-                <div class="item"><img src="../images/banner/banner6.png" alt=""></div>
-                <div class="item"><img src="../images/banner/banner7.png" alt=""></div>
-                <div class="item"><img src="../images/banner/banner8.png" alt=""></div>
-                <div class="item"><img src="../images/banner/banner9.png" alt=""></div>
+                <div class="item"><img src="../banner/banner3.png" alt=""></div>
+                <div class="item"><img src="../banner/banner1.png" alt=""></div>
+                <div class="item"><img src="../banner/banner2.png" alt=""></div>
+                <div class="item"><img src="../banner/banner3.png" alt=""></div>
+                <div class="item"><img src="../banner/banner4.png" alt=""></div>
+                <div class="item"><img src="../banner/banner5.png" alt=""></div>
+                <div class="item"><img src="../banner/banner6.png" alt=""></div>
+                <div class="item"><img src="../banner/banner7.png" alt=""></div>
+                <div class="item"><img src="../banner/banner8.png" alt=""></div>
+                <div class="item"><img src="../banner/banner9.png" alt=""></div>
             </div>
 
             <div class="new_product">
-                <h2>Sản phẩm mới</h2>
-                    <?php
-                        include("../includes/connect.php");
-                        include("../includes/SanPhamMoi.php");
-                       
-                    ?>
+                <?php
+                    include("../includes/SanPhamMoi.php");
+                ?>
             </div>
+
+            
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="/Script/index.js"></script>
+    <script src="../Script/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+.new_product{
+    margin: 10px;
+    width: 400px;
+    padding: 5px;
+}
+    
+.new_product h2{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.danhsachsanpham{
+    display: flex;
+    gap: 40px;
+}
