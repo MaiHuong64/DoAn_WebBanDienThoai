@@ -31,36 +31,11 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/sanpham_chitiet.css">
+       <link rel="stylesheet" href="../CSS/sanpham.css">
     <title>Chi tiết sản phẩm</title>
     <style>
-        .product-container {
-            display: flex;
-            max-width: 1000px;
-            margin: 30px auto;
-            font-family: Arial, sans-serif;
-        }
-        .product-image {
-            flex: 1;
-            padding: 20px;
-        }
-        .product-details {
-            flex: 2;
-            padding: 20px;
-        }
-        .product-details h3 {
-            color: #c0392b;
-        }
-        .price, .original-price {
-            font-size: 20px;
-        }
-        .original-price {
-            text-decoration: line-through;
-            color: gray;
-            margin-left: 10px;
-        }
-        .config-section {
-            margin-top: 20px;
-        }
+       
     </style>
 </head>
 <body> 
@@ -89,8 +64,10 @@
 <hr>
 
 <h3 style="text-align: center;">Sản phẩm cùng nhà sản xuất</h3>
-<link rel="stylesheet" href="CSS\sanpham.css">
-<?php include("sanpham_nhasanxuat.php"); ?>
+
+<?php
+    include("sanpham_nhansanxuat.php"); // Gọi file sanpham_nhansanxuat.php để hiển thị sản phẩm cùng nhà sản xuất
+?>
 
 </body>
 </html>

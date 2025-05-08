@@ -12,6 +12,4 @@
 	    die("Không kết nối :" . $conn->connect_error);
 	    exit();
 	}	
-	
-	
 ?>
