@@ -20,8 +20,6 @@
                 echo "<span class='TenSanPham'>" . $row['TenSanPham'] . "</span><br />";
                 echo "<span class='dongia'>" . number_format($row['DonGia']) . " đ</span>";
             echo "</a>";
-            
-            // echo "<p><a href='sanpham_chitiet.php?do=sanpham_chitiet&id_sp=" . $row['IdSanPham'] . "&id_nsx=" . $row['IdNhaSanXuat'] . "'>" . $row['TenSanPham'] . "</a></p>";
             echo "</div>";
         echo "</div>";
     }
