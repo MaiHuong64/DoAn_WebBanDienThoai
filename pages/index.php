@@ -61,12 +61,15 @@
 
             <div class="new_product">
                 <?php
-                    include("../includes/SanPhamMoi.php");
+                    include("../includes/connect.php");
+                    include("../SanPhamMoi.php");
                 ?>
             </div>
 
             <div class="product_list">
-                
+                <?php
+
+                ?>
             </div>
 
             

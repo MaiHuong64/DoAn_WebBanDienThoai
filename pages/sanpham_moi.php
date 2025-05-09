@@ -3,7 +3,7 @@
     $sql = "SELECT t.IdSanPham, t.TenSanPham, t.IdNhaSanXuat, t.HinhAnh, t.DonGia, t.SoLuong, t.MoTa, t.CauHinh, t.TiLeGiamGia, t.LuotXem, l.IdNhaSanXuat, l.TenNhaSanXuat
             FROM (tbl_nhasanxuat l INNER JOIN tbl_sanpham t ON t.IdNhaSanXuat=l.IdNhaSanXuat) 
             ORDER BY IdSanPham DESC 
-            LIMIT 0, 5";
+            LIMIT 0, 5";pages/sanpham_chitiet.php
     $result = $connect->query($sql);
     
     if (!$result) {

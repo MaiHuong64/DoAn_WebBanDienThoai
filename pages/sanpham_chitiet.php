@@ -12,7 +12,6 @@
             FROM tbl_sanpham A
             JOIN tbl_nhasanxuat B ON A.IdNhaSanXuat = B.IdNhaSanXuat
             WHERE A.IdSanPham = $IdSanPham";
-
     $danhsach = $connect->query($sql);
 
     if (!$danhsach) {
@@ -62,7 +61,7 @@
 <h3 style="text-align: center;">Sản phẩm cùng nhà sản xuất</h3>
 
 <?php
-    include("sanpham_nhansanxuat.php"); // Gọi file sanpham_nhansanxuat.php để hiển thị sản phẩm cùng nhà sản xuất
+    include("sanpham_nhansanxuat.php");
 ?>
 
 </body>
