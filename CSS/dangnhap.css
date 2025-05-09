@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #BDC3C7;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+form{
+   
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2C3E50;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+.username, .password{
+    color:  #fff;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"], input[type="password"]
+{
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 20px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ECF0F1;
+    border: none;
+    color: #2C3E50;
+    font-size: 16px;
+}
+button[type="submit"]{
+    width: 148px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff; 
+    background-color: #1ABC9C;
+    border: none;
+    cursor: pointer;
+}
+button[type="submit"]:hover{
+    background-color: #16A085;
+}
+button[type="submit"]:active{
+    background-color: #2980B9;
+}   
+.register{
+    text-align: center;
+    margin-top: 20px;
+}
+.register a{
+    color: #fff;
+    text-decoration: none;
+}
+.register a:hover{
+    text-decoration: underline;
+    color:#16A085;
+}

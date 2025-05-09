@@ -1,0 +1,29 @@
+.product-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+}
+.product-image {
+  flex: 1;
+  padding: 20px;
+}
+.product-details {
+  flex: 2;
+  padding: 20px;
+}
+.product-details h3 {
+  color: #c0392b;
+}
+.price,
+.original-price {
+  font-size: 20px;
+}
+.original-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-left: 10px;
+}
+.config-section {
+  margin-top: 20px;
+}
