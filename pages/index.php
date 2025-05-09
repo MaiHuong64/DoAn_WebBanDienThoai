@@ -61,8 +61,7 @@
 
             <div class="new_product">
                 <?php
-                    include("../includes/connect.php");
-                    include("../SanPhamMoi.php");
+                    include("../sanpham_moi.php");
                 ?>
             </div>
 
