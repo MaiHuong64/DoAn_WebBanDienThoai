@@ -7,6 +7,7 @@
    
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="stylesheet" href="../CSS/sanphammoi.css">
+    <link rel="stylesheet" href="../CSS/sanpham.css">
     
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
