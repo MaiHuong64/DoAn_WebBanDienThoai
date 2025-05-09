@@ -65,7 +65,7 @@
                 ?>
             </div>
 
-            <div class="container-">
+            <div class="product_list">
                 
             </div>
 

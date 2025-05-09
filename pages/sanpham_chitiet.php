@@ -34,9 +34,6 @@
     <link rel="stylesheet" href="../CSS/sanpham_chitiet.css">
        <link rel="stylesheet" href="../CSS/sanpham.css">
     <title>Chi tiết sản phẩm</title>
-    <style>
-       
-    </style>
 </head>
 <body> 
 
@@ -62,7 +59,6 @@
 </div>
 
 <hr>
-
 <h3 style="text-align: center;">Sản phẩm cùng nhà sản xuất</h3>
 
 <?php
