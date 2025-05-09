@@ -1,5 +1,4 @@
 <?php
-	header("Content-type: text/html; charset=utf-8");
 	$servername = "localhost";
 	$username = "root";
 	$password = "vertrigo";
@@ -12,4 +11,5 @@
 	    die("Không kết nối :" . $conn->connect_error);
 	    exit();
 	}	
+	$connect->set_charset("utf8");
 ?>

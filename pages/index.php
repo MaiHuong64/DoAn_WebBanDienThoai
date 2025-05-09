@@ -60,15 +60,11 @@
             </div>
 
             <div class="new_product">
-                <?php
-                    include("../sanpham_moi.php");
-                ?>
+                <?php include("sanpham_moi.php"); ?>
             </div>
 
             <div class="product_list">
-                <?php
-
-                ?>
+                <?php include("sanpham.php"); ?>
             </div>
 
             
