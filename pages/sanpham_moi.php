@@ -10,7 +10,7 @@
         die("Không thể thực hiện câu lệnh SQL: " . $connect->connect_error);
         exit();
     }
-    echo "<h2>Sản phẩm mới</h2>";
+    echo "<h2>Danh sách sản phẩm</h2>";
     echo "<div class='danhsachsanpham'>";
     while($row = $result->fetch_array(MYSQLI_ASSOC)){
         echo "<div class='khungsanpham'>";

@@ -7,6 +7,7 @@
    
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="stylesheet" href="../CSS/sanphammoi.css">
+      <link rel="stylesheet" href="../CSS/sanpham.css">
     
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -26,10 +27,12 @@
 
             <div class="user">
                 <i class="fa-solid fa-circle-user"></i>
+                <span>Tài khoản</span>
             </div>
 
             <div class="cart">
                 <i class="fa-solid fa-cart-shopping"></i>
+                <span>Giỏ hàng</span>
             </div>
             
         </div>
@@ -61,12 +64,14 @@
 
             <div class="new_product">
                 <?php
-                    include("../includes/SanPhamMoi.php");
+                    include("sanpham_moi.php");
                 ?>
             </div>
 
             <div class="product_list">
-                
+                <?php
+                    include("sanpham.php");
+                ?>
             </div>
 
             
