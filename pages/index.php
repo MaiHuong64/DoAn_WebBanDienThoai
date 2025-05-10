@@ -7,7 +7,7 @@
    
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="stylesheet" href="../CSS/sanphammoi.css">
-    
+      <link rel="stylesheet" href="../CSS/sanpham.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
@@ -21,7 +21,7 @@
             
             <div class="search-bar">
                 <input type="text" placeholder="Search...">
-                <button type="submit">Search</button>
+                <button type="submit">Tìm kiếm</button>
             </div>
 
             <div class="user">
@@ -61,12 +61,14 @@
 
             <div class="new_product">
                 <?php
-                    include("../includes/SanPhamMoi.php");
+                    include("sanphammoi.php");
                 ?>
             </div>
 
             <div class="product_list">
-                
+                <?php
+                    include("sanpham.php");
+                ?>
             </div>
 
             
